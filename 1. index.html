@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Verdana, Helvetica, sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.hide{
+	display: none;
+}
+
+.hidden:hover + .hide {
+  	display: block;
+  	color: red;
+}
+
+.column{
+
+	float:left;
+	width: 50%;
+	padding: 4px;
+}
+
+.column1{
+
+	float:center;
+	width: 100%;
+	padding: 4px;
+}
+
+
+.row::after{
+	content: "";
+	display:table;
+	clear: both;
+}
+
+.row1::after{
+	content: "";
+	display:table;
+	clear: both;
+}
+
+h1
+   {
+   font-family: Lucida Sans;
+   font-size: 50px;
+   color: rgb(204,153,102);
+   }
+
+h2
+   {
+   font-family: Lucida Sans;
+   font-size: 25px;
+   color: black;
+   text-align: justify;
+   }
+
+h3
+   {
+   font-family: Lucida Sans;
+   font-size: 20px;
+   color: black;
+   text-align: left;
+   }
+
+p1
+   {
+   font-family: Lucida Sans;
+   font-size: 50px;
+   color: rgb(204,153,102);
+   }
+
+p2
+   {
+   font-family: Verdana;
+   font-size: 40px;
+   color: rgb(35,15,8);
+   }
+
+p3
+   {
+   font-family: Verdana;
+   font-size: 40px;
+   color: white;
+   }
+
+span{
+background-color: rgba(255, 255, 255,0.6);
+}
+
+span1{
+background-color: rgba(255,228,196,0.8);
+}
+
+.container 
+   {
+   position: relative;
+   width: 30%;
+   }
+
+.image 
+   {
+    width: 115%;
+    height: auto;
+
+   }
+  
+.overlay 
+   {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(90,44,10);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+   }
+  
+   
+.container:hover .overlay 
+   {
+    transform: scale(1);
+   }
+
+.text 
+   {
+    color: white;
+    font-family: Lucida Sans;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 5px;
+   }
+
+
+
+	ul{
+		display: flex;
+		justify-content: right;
+		font-size: 20px;
+		position: fixed;
+	}
+	li{
+		list-style: none;
+		margin-left: 60px;
+	}
+	li a{
+		text-decoration: none;
+		color: rgb(204,153,102);
+		font-family: arial;
+		text-transform: uppercase;
+	}
+	li a::after{
+		content: '';
+		width: 0;
+		height: 3px;
+		background-color: coral;
+		margin: auto;
+		display: block;
+	}
+	li a:hover::after{
+		width: 100%;
+		transition: width 0.3s linear;
+		margin-top: 8px;
+	}
+	li a:hover{
+		color: coral;
+	}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+#section1 {
+	background: url("img/bg01.jpg");
+  	height: 800px;
+  	background-attachment: fixed;
+ 	background-position: center;
+  	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+#section2 {
+  	background: url("img/bg02.jpg");
+  	height: 800px;
+  	background-attachment: fixed;
+ 	background-position: center;
+  	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+#section3 {
+  	background: url("img/bg01.jpg");
+  	height: 800px;
+  	background-attachment: fixed;
+ 	background-position: center;
+  	background-repeat: no-repeat;
+	background-size: cover;
+	
+
+}
+
+#section4 {
+  	background: url("img/bg02.jpg");
+  	height: 800px;
+  	background-attachment: fixed;
+ 	background-position: center;
+  	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+ 
+#content {
+	display: flex;
+	align-item: center;
+	justify-content: center;
+	height: 20vh;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#content2 {
+	
+	padding: 10px;
+	height: 20vh;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+img {
+  border: 10px solid black;
+}
+
+</style>
+<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+<body style="margin: 0;" >
+
+	<nav>
+		<ul>
+			<b><li><a href="#index">Intro</a></li></b>
+			<b><li><a href="#section2">Menu</a></li></b>
+			<b><li><a href="#section3">Services</a></li></b>
+			<b><li><a href="#section4">Contact Us</a></li></b>
+		</ul>
+	</nav>
+
+
+<div class="main" id="section1">
+<br><br><br><br><center><img src="2. Picture 1.png" class="image" style="width:550px; height:382px;"></center></br></br></br></br>
+
+<center>
+<div id="content">
+<b><h1> BONJOUR ! Welcome to your best chicken menu’s </h1></b>
+</center>
+</div>
+</div>
+
+<div class="main" id="section2">
+<div id="content2">
+<br><center><h1> OUR MENU ! </h1></center></br>
+</div>
+
+
+<div class="row">
+<center>
+
+		<div class="column">
+        	<div class="container">
+        	<img src="3. Picture 2.png" alt="Avatar" class="image" width="100%;">
+			<div class="overlay">
+        		<div class="text"> KOREAN SPICY CHICKEN (RM15/servings) </div>
+		</div>
+		</div>
+		</div>
+
+		<div class="column">
+		<div class="container">
+        	<img src="4. Picture 3.png" alt="Avatar" class="image" width="100%;">
+			<div class="overlay">
+        		<div class="text"> GRILLED CHICKEN (RM15/servings) </div>
+      		</div>
+		</div>
+		</div>
+
+		<div class="column">
+		<div class="container">
+        	<img src="5. Picture 4.png" alt="Avatar" class="image" width="100%;">
+			<div class="overlay">
+        		<div class="text"> CRISPY FRIED CHICKEN (RM13/servings) </div>
+      		</div>
+		</div>
+		</div>
+
+		<div class="column">
+		<div class="container">
+        	<img src="6. Picture 5.png" alt="Avatar" class="image" width="100%;">
+			<div class="overlay">
+        		<div class="text"> CHICKEN TANDOORI (RM10/servings) </div>
+      		</div>
+		</div>
+		</div>
+		
+		<div class="column">
+		<div class="container">
+        	<img src="7. Picture 6.png" alt="Avatar" class="image" width="100%;">
+			<div class="overlay">
+        		<div class="text"> SMOKED GRILLED CHICKEN (RM12/servings) </div>
+      		</div>
+		</div>
+		</div>
+
+		<div class="column">
+		<div class="container">
+        	<img src="8. Picture 7.png" alt="Avatar" class="image" width="100%;">
+			<div class="overlay">
+        		<div class="text"> BARBEQUE CHICKEN (RM13/servings) </div>
+      		</div>
+		</div>
+		</div>
+</center>
+</div>
+
+
+
+ 
+</div>
+
+<div class="main" id="section3">
+<div id="content2">
+<center>
+<br><br><br><b><p1> SERVICES THAT WE PROVIDE </p1></b></br></br></br>
+</center> 
+<center>
+
+<div class="row">
+
+<div class="column">
+<div class="hidden"><p2><b><span1> SIZING </span></b></p2></div>
+<div class="hide"><p3> Serve by potion. </p3></div>
+</div>
+
+<div class="column">
+<div class="hidden"><p2><b><span1> SHAPE </span1></b></p2></div>
+<div class="hide"><p3> By piece/ whole chicken/ half chicken. </p3></div>
+</div>
+
+<div class="column">
+<div class="hidden"><p2><b><span1> FLAVOUR </span1></b></p2></div>
+<div class="hide"><p3> Barbeque/  Smoke/ Spicy/ Grill/ Crispy, Tandoori. </p3></div>
+</div>
+
+<div class="column">
+<div class="hidden"><p2><b><span1> ODOUR </span1></b></p2></div>
+<div class="hide"><p3> Very strong aroma. </p3></div>
+</div>
+
+<div class="column">
+<div class="hidden"><p2><b><span1> PACKAGING </span1></b></p2></div>
+<div class="hide"><p3> Aluminium foil and disposable bowl. </p3></div>
+</div>
+
+<div class="column">
+<div class="hidden"><p2><b><span1> COLOUR </span1></b></p2></div>
+<div class="hide"><p3> Golden Brownish, Golden Crispy. </p3></div>
+</div>
+
+</div>
+
+<div class="hidden"><p2><b><i><span1><br><br> 100% FRESH CHICKEN FROM FARM !!!! </br></br></span1></i></b></p2></div>
+
+</center>
+</div> 
+
+</div>
+
+<div class="main" id="section4">
+<div id="content2">
+<center>
+<br><br><br><b><p1> CONTACT US </p1></b></br></br></br>
+<p1><b><span1> TRUE FARM FRESHNESS </span1></b></p1>
+<h2><span> Hi everyone! We are The Four Fighters proudly give you the best chicken in town. 
+Basically, The Four Fighters were founded by one of our members. 
+For our products, we use natural, high-quality materials and have all the conveniences to make our guests feel welcome and comfortable. 
+We are always evolving in the name of chicken, from innovating new ways to order to creating exciting new restaurant formats, we are not afraid to constantly try new things that make it easier to enjoy our chicken. 
+We always gratify the customer so that everyone knows about our company. In terms of the goods, we wish to meet or even exceed the consumers' expectations. 
+We also want our customers to be able to enjoy high-quality chicken at a reasonable price. </span></h2>
+<p1><b><span1> THE FOUR FIGHTERS MAIN OUTLET </span1></b></p1>
+<h3><span> Lot 13, Jalan Empangan, Seksyen 7, Bandar Baru Bangi, 43650, Selangor, Malaysia.</span><p><span>Tel: 03 2145 3259 </span></p><p><span>Fax: 03 2143 4085</span></p><span>Email: the4fighters@gmail.com</span></h3>
+
+</center>  
+</div>
+</div>
+
+
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d790c843d54019b',m:'jMLn7i_hoGQckEUZ_Dl7wkmi6BJMacT5XMxQqFUmb.E-1643863937-0-AXwyPl48qZM06VPFA+y1T+MPA3rKMWmO4mR0bCUNznuMjC2FcogXJc+D82nFoi6BpYSG4dAJIQmmwVwyB/XdNvXHR3MOFfgLouoceTVEY+SD9h83ne8I49orqRGmtB6hcPufjqqz0nFbviyL1FzTRHGnjayZ+7KoWW7tXn/vVUeh130Le4cjzuDNi/ps23tvr7qH0z5yQLggNux7HPbwIUw=',s:[0x90049d8f13,0x0013933ddb],}})();</script></body>
+</html>
