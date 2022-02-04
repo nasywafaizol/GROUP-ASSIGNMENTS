@@ -1,193 +1,16 @@
 <!DOCTYPE html>
 <html>
+<head>
 
 <link rel="stylesheet"href="style.css" type="text/css">
-<head>
+</head>
 <style>
-body {
-  font-family: Verdana, Helvetica, sans-serif;
-}
-
-*{
-	box-sizing: border-box;
-}
-
-.hide{
-	display: none;
-}
-
-.hidden:hover + .hide {
-  	display: block;
-  	color: red;
-}
-
-.column{
-
-	float:left;
-	width: 50%;
-	padding: 4px;
-}
-
-.column1{
-
-	float:center;
-	width: 100%;
-	padding: 4px;
-}
-
-
-.row::after{
-	content: "";
-	display:table;
-	clear: both;
-}
-
-.row1::after{
-	content: "";
-	display:table;
-	clear: both;
-}
-
-h1
-   {
-   font-family: Lucida Sans;
-   font-size: 50px;
-   color: rgb(204,153,102);
-   }
-
-h2
-   {
-   font-family: Lucida Sans;
-   font-size: 25px;
-   color: black;
-   text-align: justify;
-   }
-
-h3
-   {
-   font-family: Lucida Sans;
-   font-size: 15px;
-   color: black;
-   text-align: left;
-   }
-
-p1
-   {
-   font-family: Lucida Sans;
-   font-size: 50px;
-   color: rgb(204,153,102);
-   }
-
-p2
-   {
-   font-family: Verdana;
-   font-size: 40px;
-   color: rgb(35,15,8);
-   }
-
-p3
-   {
-   font-family: Verdana;
-   font-size: 40px;
-   color:pink;
-   }
-
-span{
-background-color: rgba(255, 255, 255,0.6);
-}
-
-span1{
-background-color: rgba(255,228,196,0.8);
-}
-
-.container 
-   {
-   position: relative;
-   width: 30%;
-   }
-
-.image 
-   {
-    width: 115%;
-    height: auto;
-
-   }
-  
-.overlay 
-   {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgb(90,44,10);
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    transform: scale(0);
-    transition: .3s ease;
-   }
-  
-   
-.container:hover .overlay 
-   {
-    transform: scale(1);
-   }
-
-.text 
-   {
-    color: pink;
-    font-family: Lucida Sans;
-    font-size: 18px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    padding: 5px;
-   }
-
-
-
-	ul{
-		display: flex;
-		justify-content: right;
-		font-size: 20px;
-		position: fixed;
-	}
-	li{
-		list-style: none;
-		margin-left: 60px;
-	}
-	li a{
-		text-decoration: none;
-		color: rgb(204,153,102);
-		font-family: arial;
-		text-transform: uppercase;
-	}
-	li a::after{
-		content: '';
-		width: 0;
-		height: 3px;
-		background-color: coral;
-		margin: auto;
-		display: block;
-	}
-	li a:hover::after{
-		width: 100%;
-		transition: width 0.3s linear;
-		margin-top: 8px;
-	}
-	li a:hover{
-		color: coral;
-	}
-
-
 html {
   scroll-behavior: smooth;
 }
 
 #section1 {
-	background: url("https://i.pinimg.com/564x/d5/b8/68/d5b8684e917bde981c48a67cd86e7dfa.jpg");
+	background: url("https://cdnimg.webstaurantstore.com/images/articles/7/lighting-header.jpg");
   	height: 800px;
   	background-attachment: fixed;
  	background-position: center;
@@ -197,7 +20,7 @@ html {
 }
 
 #section2 {
-  	background: url("https://i.pinimg.com/564x/8d/91/b4/8d91b4a8350cfe04863ca69d3210d6e6.jpg");
+  	background: url("https://pixnio.com/free-images/2017/08/22/2017-08-22-18-07-04.jpg");
   	height: 800px;
   	background-attachment: fixed;
  	background-position: center;
@@ -207,7 +30,7 @@ html {
 }
 
 #section3 {
-  	background: url("https://i.pinimg.com/564x/7c/b7/97/7cb79703e121cf2e0c2c9bf09caac7f6.jpg");
+  	background: url("https://cdnimg.webstaurantstore.com/images/articles/7/lighting-header.jpg");
   	height: 800px;
   	background-attachment: fixed;
  	background-position: center;
@@ -218,7 +41,7 @@ html {
 }
 
 #section4 {
-  	background: url("https://i.pinimg.com/564x/07/c9/42/07c9420c70f397532ae6147de4cbbb5b.jpg");
+  	background: url("https://pixnio.com/free-images/2017/08/22/2017-08-22-18-07-04.jpg");
   	height: 800px;
   	background-attachment: fixed;
  	background-position: center;
@@ -243,17 +66,30 @@ html {
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
-img {
-  border: 10px solid black;
+.container 
+   {
+   position: relative;
+   width: 30%;
+   }
+
+.column{
+
+	float:left;
+	width: 50%;
+	padding: 4px;
 }
 
+.row::after{
+	content: "";
+	display:table;
+	clear: both;
+}
 </style>
-<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
 <body style="margin: 0;" >
 
 	<nav>
 		<ul>
-			<b><li><a "#index.html">Intro</a></li></b>
+			<b><li><a href="#section1">Intro</a></li></b>
 			<b><li><a href="#section2">Menu</a></li></b>
 			<b><li><a href="#section3">Services</a></li></b>
 			<b><li><a href="#section4">Contact Us</a></li></b>
@@ -262,7 +98,7 @@ img {
 
 
 <div class="main" id="section1">
-<br><br><br><br><center><img src="images\Picture 1.png" class="image" style="width:550px; height:382px;"></center></br></br></br></br>
+<br><br><br><br><center><img src="C:\Users\USER\OneDrive\Desktop\img\intro01.jpg" class="image" style="width:550px; height:382px;"></center></br></br></br></br>
 
 <center>
 <div id="content">
@@ -282,7 +118,7 @@ img {
 
 		<div class="column">
         	<div class="container">
-        	<img src="images\Picture 2.png" alt="Avatar" class="image" width="100%;">
+        	<img src="C:\Users\USER\OneDrive\Desktop\img\img01.jpg" alt="Avatar" class="image" width="100%;">
 			<div class="overlay">
         		<div class="text"> KOREAN SPICY CHICKEN (RM15/servings) </div>
 		</div>
@@ -291,7 +127,7 @@ img {
 
 		<div class="column">
 		<div class="container">
-        	<img src="images\Picture 3.png" alt="Avatar" class="image" width="100%;">
+        	<img src="C:\Users\USER\OneDrive\Desktop\img\img02.jpg" alt="Avatar" class="image" width="100%;">
 			<div class="overlay">
         		<div class="text"> GRILLED CHICKEN (RM15/servings) </div>
       		</div>
@@ -300,7 +136,7 @@ img {
 
 		<div class="column">
 		<div class="container">
-        	<img src="images\Picture 4.png" alt="Avatar" class="image" width="100%;">
+        	<img src="C:\Users\USER\OneDrive\Desktop\img\img03.jpg" alt="Avatar" class="image" width="100%;">
 			<div class="overlay">
         		<div class="text"> CRISPY FRIED CHICKEN (RM13/servings) </div>
       		</div>
@@ -309,7 +145,7 @@ img {
 
 		<div class="column">
 		<div class="container">
-        	<img src="images\Picture 5.png" alt="Avatar" class="image" width="100%;">
+        	<img src="C:\Users\USER\OneDrive\Desktop\img\img04.jpg" alt="Avatar" class="image" width="100%;">
 			<div class="overlay">
         		<div class="text"> CHICKEN TANDOORI (RM10/servings) </div>
       		</div>
@@ -318,7 +154,7 @@ img {
 		
 		<div class="column">
 		<div class="container">
-        	<img src="images\Picture 6.png" alt="Avatar" class="image" width="100%;">
+        	<img src="C:\Users\USER\OneDrive\Desktop\img\img05.jpg" alt="Avatar" class="image" width="100%;">
 			<div class="overlay">
         		<div class="text"> SMOKED GRILLED CHICKEN (RM12/servings) </div>
       		</div>
@@ -327,7 +163,7 @@ img {
 
 		<div class="column">
 		<div class="container">
-        	<img src="images\Picture 7.png" alt="Avatar" class="image" width="100%;">
+        	<img src="C:\Users\USER\OneDrive\Desktop\img\img06.jpg" alt="Avatar" class="image" width="100%;">
 			<div class="overlay">
         		<div class="text"> BARBEQUE CHICKEN (RM13/servings) </div>
       		</div>
@@ -408,5 +244,5 @@ We also want our customers to be able to enjoy high-quality chicken at a reasona
 </div>
 
 
-<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d790c843d54019b',m:'jMLn7i_hoGQckEUZ_Dl7wkmi6BJMacT5XMxQqFUmb.E-1643863937-0-AXwyPl48qZM06VPFA+y1T+MPA3rKMWmO4mR0bCUNznuMjC2FcogXJc+D82nFoi6BpYSG4dAJIQmmwVwyB/XdNvXHR3MOFfgLouoceTVEY+SD9h83ne8I49orqRGmtB6hcPufjqqz0nFbviyL1FzTRHGnjayZ+7KoWW7tXn/vVUeh130Le4cjzuDNi/ps23tvr7qH0z5yQLggNux7HPbwIUw=',s:[0x90049d8f13,0x0013933ddb],}})();</script></body>
+</body>
 </html>
